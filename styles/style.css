@@ -1,0 +1,97 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Shared CSS */
+.common-width{
+    width: 1200px;  
+    margin: 0 auto;  
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* styles */
+.head-bg{
+    background-color: beige;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-title{
+    font-size: 30px;
+    font-weight:800;
+    color: rgb(26, 32, 68);
+}
+.nav-section{
+    display: flex;
+}
+.nav-section li{
+    list-style: none;
+    margin: 0 10px;   
+}
+.nav-section li a{    
+    padding: 5px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(114, 114, 114);
+    border-radius: 5px;
+}
+.nav-section li a:hover {
+    background-color: rgb(218, 160, 160);
+    transition: .3s ease;
+}
+
+
+/* Container Layout CSS */
+
+.container-layout{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px) 50px 50px;    
+    gap: 20px;
+}
+.box{
+    background-color: aquamarine;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    
+}
+#box-1{
+    grid-row: span 5;
+    background-color: blueviolet;
+    color: white;
+}
+#box-11, #box-12{
+    grid-column: span 3;
+}
+
+/* Calander CSS */
+
+.calender-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 50px repeat(5, 100px);
+    gap: 10px;
+}
+.date, .day{
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.day{
+    background-color: rgb(151, 151, 151);
+}
+
